@@ -1,7 +1,7 @@
-CREATE DATABASE burger_db;
-USE burgers_db;
+CREATE DATABASE burger;
+USE burger;
 
-CREATE TABLE `burgers`
+CREATE TABLE `burger`
 (
   `id` Int
 ( 11 ) AUTO_INCREMENT NOT NULL,
