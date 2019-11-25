@@ -6,16 +6,16 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
-//examples
-// router.get("/", function(req, res) {
-//   cat.all(function(data) {
-//     var hbsObject = {
-//       burgers: data
-//     };
-//     console.log(hbsObject);
-//     res.render("index", hbsObject);
-//   });
-// });
+// examples
+router.get("/", function(req, res) {
+  burger.all(function(data) {
+    var hbsObject = {
+      burgers: data
+    };
+    console.log(hbsObject);
+    res.render("index", hbsObject);
+  });
+});
 
 // router.post("/api/cats", function(req, res) {
 //   cat.create(["name", "sleepy"], [req.body.name, req.body.sleepy], function(
@@ -60,5 +60,5 @@ var burger = require("../models/burger.js");
 //   });
 // });
 
-// // Export routes for server.js to use.
-// module.exports = router;
+// Export routes for server.js to use.
+module.exports = router;
