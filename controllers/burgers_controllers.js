@@ -10,21 +10,25 @@ var burger = require("../models/burger.js");
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
-      burgers: data
+      burger: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-// router.post("/api/cats", function(req, res) {
-//   cat.create(["name", "sleepy"], [req.body.name, req.body.sleepy], function(
-//     result
-//   ) {
-//     // Send back the ID of the new quote
-//     res.json({ id: result.insertId });
-//   });
-// });
+//add submit button
+
+router.post("/api/burgers", function(req, res) {
+  burger.create(
+    ["burger_name", "devoured"],
+    [req.body.name, req.body.name],
+    function(result) {
+      // Send back the ID of the new quote
+      res.json({ id: result.insertId });
+    }
+  );
+});
 
 // router.put("/api/cats/:id", function(req, res) {
 //   var condition = "id = " + req.params.id;
@@ -62,3 +66,10 @@ router.get("/", function(req, res) {
 
 // Export routes for server.js to use.
 module.exports = router;
+
+//css
+// module.exports = function(app) {
+//   app.get("/css/style.css", function(req, res) {
+//     res.sendFile(path.join(__dirname, "../public/assets/css/burger_style.css"));
+//   });
+// };

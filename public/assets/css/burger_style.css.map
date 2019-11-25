@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;CACf",
+    "sources": [
+        "burger_style.scss"
+    ],
+    "names": [],
+    "file": "burger_style.css"
+}
