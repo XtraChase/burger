@@ -23,6 +23,10 @@ var routes = require("./controllers/burgers_controllers");
 
 app.use(routes);
 
+// app.use("/css/style.css", function(req, res) {
+//   res.sendFile(path.join(__dirname, "../public/assets/css/burger_style.css"));
+// });
+
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
   // Log (server-side) when our server has started

@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burger: data
     };
-    console.log(hbsObject);
+    console.log("hbsobject", hbsObject);
     res.render("index", hbsObject);
   });
 });
@@ -20,14 +20,12 @@ router.get("/", function(req, res) {
 //add submit button
 
 router.post("/api/burgers", function(req, res) {
-  burger.create(
-    ["burger_name", "devoured"],
-    [req.body.name, req.body.name],
-    function(result) {
-      // Send back the ID of the new quote
-      res.json({ id: result.insertId });
-    }
-  );
+  burger.create(["burger_name", "devoured"], [req.body.name, 0], function(
+    result
+  ) {
+    // Send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
 });
 
 // router.put("/api/cats/:id", function(req, res) {
