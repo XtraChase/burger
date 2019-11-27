@@ -3,4 +3,39 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
+
+.btn {
+  padding: 6px 12px 6px 12px;
+  border-radius: 3px;
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffd97b), to(#ffc107));
+  background-image: linear-gradient(to right, #ffd97b, #ffc107);
+}
+
+@media screen and (max-width: 640px) {
+  .btn {
+    font-size: 0.8em;
+  }
+}
+
+.btn:hover {
+  -webkit-transform: translatey(-1.5px);
+          transform: translatey(-1.5px);
+  -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+.btn:active {
+  -webkit-transform: translateY(-0.2px);
+          transform: translateY(-0.2px);
+  -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+#submit {
+  margin: 10px 0px 20px 100px;
+}
 /*# sourceMappingURL=burger_style.css.map */
