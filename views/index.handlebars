@@ -1,8 +1,15 @@
+<div class="image-container">
+    <img src="https://www.trzcacak.rs/myfile/detail/487-4874215_hamburger-clipart-transparent-background-cheeseburger-sweetclipart.png"
+        alt="Burger Image" width="400">
+</div>
 <h1>Burger</h1>
 
 <h2>Eat Burgers</h2>
 {{#each burger}}
-<p>this is a burger</p>
+{{#unless devoured}}
+<p>{{this.burger_name}}</p>
+<button class="eat-btn" data-id="{{this.id}}">EAT</button>
+{{/unless}}
 {{/each}}
 
 <h2>Add a burger</h2>

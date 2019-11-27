@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;CACf",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,oBAAoB;EACjC,UAAU,EAAE,MAAM;CACnB",
     "sources": [
         "burger_style.scss"
     ],
