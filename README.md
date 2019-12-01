@@ -8,3 +8,5 @@ MySQL, Node, Express, Handlebars and a homemade ORM.
 * Each burger in the waiting area also has a `EAT!` button. When the user clicks it, the burger will move to the right side of the page.
 
 * The app will store every burger in a database, whether devoured or not.
+
+Heroku Deployment: https://limitless-everglades-88254.herokuapp.com/
