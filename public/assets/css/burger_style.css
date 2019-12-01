@@ -1,18 +1,35 @@
 body {
+  background-image: url("https://wallpapermemory.com/uploads/276/burger-background-hd-1920x1200-149177.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 80vh;
+  display: -ms-grid;
+  display: grid;
   text-align: center;
 }
 
+h1 {
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+
 .btn {
+  font-weight: bold;
   padding: 6px 12px 6px 12px;
   border-radius: 3px;
   border-style: none;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffd97b), to(#ffc107));
-  background-image: linear-gradient(to right, #ffd97b, #ffc107);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffce2c), to(#ff9823));
+  background-image: linear-gradient(to right, #ffce2c, #ff9823);
 }
 
 @media screen and (max-width: 640px) {
@@ -33,6 +50,11 @@ body {
           transform: translateY(-0.2px);
   -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.eat-btn {
+  width: 60px;
+  margin-left: 10px;
 }
 
 #submit {
